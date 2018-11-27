@@ -121,7 +121,7 @@ class App extends Component {
         <Comments comments={this.state.comments} />
         {this.state.isLoading && <p>Carregando...</p>}
       </div>
-    );
+    )
   }
 }
 
