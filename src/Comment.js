@@ -1,25 +1,25 @@
 import React from 'react'
 
-const Comment = ({ comment }) => {    
-    let commentAux = 'vazio'
-	let email = 'vazio'
-	if (comment) {
-		if (comment.comment) {
-			commentAux = comment.comment
-        }		
-        if(comment.email){
-            email = comment.email
+const Comment = ({ c }) => {
+    let comment = 'vazio'
+    let email = 'vazio'
+    if (c) {
+        if (c.comment) {
+            comment = c.comment
         }
-	}
-    return(
+        if (c.email) {
+            email = c.email
+        }
+    }
+    return (
         <div className='card mt-2'>
             <div className='card-body'>
-            Comentário: { commentAux } 
-            <br />
-            <span className='text-muted'> Enviado por: {email}</span>
+                {comment}
+                <br />
+                <span className='text-muted'>{email}</span>
             </div>
         </div>
-    )    
+    )
 }
+
 export default Comment
- 

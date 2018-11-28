@@ -6,11 +6,11 @@ it('should render text', () => {
     const c = {
         comment: 'test'
     }
-    const wrapper = render(<Comment comment={ c } />)
-    expect(wrapper.text()).toBe('test')
+    const wrapper = render(<Comment c={ c } />)
+    expect(wrapper.text()).toBe('testvazio')
 })
 
 it('should render empty', () => {
     const wrapper = render(<Comment />)
-    expect(wrapper.text()).toBe('vazio')
+    expect(wrapper.text()).toBe('vaziovazio')
 })
