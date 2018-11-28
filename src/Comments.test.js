@@ -14,11 +14,9 @@ describe('<Comments />', () => {
 
 		expect(wrapper.find(Comment).length).toBe(2)
 
-		expect(wrapper.find(Comment).get(0).props.comment).toBe(comments.a)
-		expect(wrapper.find(Comment).get(1).props.comment).toBe(comments.b)
-
-		expect(wrapper.find(Comment).get(0).key).toBe('a')
-		expect(wrapper.find(Comment).get(1).key).toBe('b')
+		expect(wrapper.find(Comment).get(0).props.c).toBe(comments.a)
+		
+		expect(wrapper.find(Comment).get(0).key).toBe(comments.a.id)
 	})
 
 	it('should work with no Comments', () => {
