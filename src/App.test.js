@@ -66,7 +66,7 @@ describe('<App />', () => {
 			onAuthStateChanged: jest.fn()
 		}  
 		
-		const wrapper = shallow(<App database={database} auth={auth}/>);
+		const wrapper = shallow(<App database={database} auth={auth} />);
 
 		//não recebeu comments
 		expect(wrapper.find(Comments).length).toBe(1)
