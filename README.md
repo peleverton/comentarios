@@ -1449,7 +1449,6 @@ Additionally, you might find [jest-enzyme](https://github.com/blainekasten/enzym
 ```js
 expect(wrapper).toContainReact(welcome);
 ```
-
 To enable this, install `jest-enzyme`:
 
 ```sh
